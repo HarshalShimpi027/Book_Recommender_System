@@ -6,24 +6,31 @@ This project implements a Book Recommender System using both popularity-based an
 
 - [Kaggle Dataset](https://www.kaggle.com/datasets/arashnic/book-recommendation-dataset)
 
-# Features
-- Popularity-Based Recommendations: Recommends popular books to users, regardless of their individual preferences.
-- Collaborative Filtering: Utilizes collaborative filtering to recommend books based on similar users' preferences.
-- Web Application: Includes a user-friendly web interface for searching books and receiving recommendations.
-- Templates: Utilizes HTML templates for the user interface:
+# Data Cleaning
+- Data cleaning was performed in Google Colab to preprocess the dataset and prepare it for recommendation model training. This included handling missing values, removing duplicates, and ensuring data consistency.
+- [Book_Recommender.py](https://github.com/HarshalShimpi027/Book_Recommender_System/blob/main/book_recommender.py)
+
+# Files
+- **Popularity**-Based Recommendations: Recommends popular books to users, regardless of their individual preferences.
+- **Collaborative Filtering**: Utilizes collaborative filtering to recommend books based on similar users' preferences.
+- **Web Application**: Includes a user-friendly web interface for searching books and receiving recommendations.
+- **Templates**: Utilizes HTML templates for the user interface:
   - [index.html](https://github.com/HarshalShimpi027/Book_Recommender_System/blob/main/templates/index.html): Landing page for the web application.
   - [recommend.html](https://github.com/HarshalShimpi027/Book_Recommender_System/blob/main/templates/recommend.html): Page displaying recommended books based on user input.
-- Application Backend: Utilizes [app.py](https://github.com/HarshalShimpi027/Book_Recommender_System/blob/main/app.py) as the backend of the web application.
-- Pre-trained Models: Includes pre-trained models stored as .pkl files:
-- [book.pkl](https://github.com/HarshalShimpi027/Book_Recommender_System/blob/main/books.pkl): Data file containing information about books.
-- [popular.pkl](https://github.com/HarshalShimpi027/Book_Recommender_System/blob/main/popular.pkl): Pre-calculated popular books for popularity-based recommendations.
-- [pt.pkl](https://github.com/HarshalShimpi027/Book_Recommender_System/blob/main/pt.pkl): Final rating data with no duplicate values.
-- [similarity_score.pkl](https://github.com/HarshalShimpi027/Book_Recommender_System/blob/main/similarity_score.pkl): Pre-computed similarity scores for collaborative filtering.
+- **Application Backend**: Utilizes [app.py](https://github.com/HarshalShimpi027/Book_Recommender_System/blob/main/app.py) as the backend of the web application.
+- **Pre-trained Models**: Includes pre-trained models stored as .pkl files:
+- **[App.py](https://github.com/HarshalShimpi027/Book_Recommender_System/blob/main/app.py)**: Flask application for serving the web interface and handling recommendation requests.
+- **[Index.html](https://github.com/HarshalShimpi027/Book_Recommender_System/blob/main/templates/index.html)**: HTML template for the home page of the web application.
+- **[Recommend.html](https://github.com/HarshalShimpi027/Book_Recommender_System/blob/main/templates/recommend.html)**: HTML template for displaying recommended books.
+- **[Book.pkl](https://github.com/HarshalShimpi027/Book_Recommender_System/blob/main/books.pkl)**: Pickle file containing book data.
+- **[Popular.pkl](https://github.com/HarshalShimpi027/Book_Recommender_System/blob/main/popular.pkl)**: Pickle file containing popularity-based recommendation data.
+- **[Pt.pkl](https://github.com/HarshalShimpi027/Book_Recommender_System/blob/main/pt.pkl)**: Pickle file containing preprocessed rating data with no duplicates.
+- **[Similarity_score.pkl](https://github.com/HarshalShimpi027/Book_Recommender_System/blob/main/similarity_score.pkl)**: Pickle file containing similarity scores for collaborative filtering.
 
 # Usage
 1) Clone the repository to your local machine.
 2) Ensure you have Python and required dependencies installed.
-3) Run app.py to start the web application.
+3) Run [App.py](https://github.com/HarshalShimpi027/Book_Recommender_System/blob/main/app.py) to start the web application.
 4) Access the web application through your browser and start searching for books and receiving recommendations.
 
 # Dependencies
