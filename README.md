@@ -31,7 +31,7 @@ This project implements a Book Recommender System using both popularity-based an
 1) Clone the repository to your local machine.
 2) Ensure you have Python and required dependencies installed.
 3) Run [App.py](https://github.com/HarshalShimpi027/Book_Recommender_System/blob/main/app.py) to start the web application.
-4) Access the web application through your browser and start searching for books and receiving recommendations.
+4) Run on Local environment (PyCharm).
 
 # Dependencies
 - Python 3.x
